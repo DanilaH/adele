@@ -1,0 +1,41 @@
+.header-container {
+  @include lato;
+
+  text-align: center;
+}
+
+.header {
+  @include raleway;
+
+  margin: 0;
+  margin-bottom: 9px;
+
+  font-size: 30px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.header__bold {
+  display: inline-block;
+  margin-right: 10px;
+
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.header__thin {
+  display: inline-block;
+  padding: 10px 0;
+  padding-left: 16px;
+
+  font-weight: 300;
+  word-spacing: 4px;
+
+  border-left: 1px solid #18a3dd;
+}
+
+.header__text {
+  font-size: 16px;
+  color: #83888f;
+  word-spacing: 1px;
+}

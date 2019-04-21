@@ -1,0 +1,136 @@
+.supplement {
+  margin-bottom: 120px;
+  padding-top: 108px;
+}
+
+.supplement__header-container {
+  margin-bottom: 62px;
+}
+
+.supplement__wrapper {
+  @include lato;
+
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.supplement__description {
+  width: 375px;
+}
+
+.supplement__table {
+  width: 459px;
+  margin-right: 123px;
+  margin-bottom: 30px;
+
+  font-size: 16px;
+  color: #333740;
+  font-weight: 300;
+  line-height: 20px;
+
+  border-collapse: collapse;
+}
+
+.supplement__table-row {
+  border-bottom: 1px solid #ebebeb; 
+}
+
+.supplement__table-cell {
+  padding-top: 13px;
+  padding-bottom: 10px;
+
+  &:nth-child(even) {
+    text-align: right;
+  }
+}
+
+.supplement__table-head {
+  border-bottom: 5px solid #333740;
+}
+
+.supplement__table-head-cell {
+  padding-bottom: 15px;
+
+  text-transform: uppercase;
+  line-height: 22px;
+  font-weight: 900;
+
+  &:first-child {
+    font-size: 24px;
+    text-align: left;
+    vertical-align: middle;
+    letter-spacing: 1px;
+  }
+
+  &:last-child {
+    font-size: 16px;
+    text-align: right;
+    vertical-align: top;
+  }
+}
+
+.supplement__unit {
+  font-weight: 300;
+}
+
+.supplement__button {
+  @include button-reset;
+  
+  width: 457px;
+  height: 50px;
+  box-sizing: border-box;
+  padding-left: 40px;
+
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: left;
+
+  background-color: #18a3dd;
+
+  border-radius: 25px;
+}
+
+.supplement__button-download {
+  display: inline-block;
+}
+
+.supplement__button-weight {
+  display: inline-block;
+  margin-left: 180px;
+  
+  font-weight: 300;
+}
+
+.supplement__description {
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.supplement__image-container {
+  width: 103px; 
+  height: 116px;
+  margin-bottom: 48px;
+}
+
+.supplement__name {
+  position: relative;
+  
+  margin-bottom: 23px;
+  padding-left: 32px;
+}
+
+.supplement__aside-line {
+  position: absolute;
+  left: -13px;
+  top: 20px;
+
+  transform: rotate(90deg);
+}
+
+.supplement__element {
+  font-weight: 800;
+  text-transform: uppercase;
+}

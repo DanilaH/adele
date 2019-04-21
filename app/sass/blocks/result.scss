@@ -1,0 +1,123 @@
+.result {
+  position: relative;
+  
+  margin-bottom: 118px;
+	padding-top: 111px;
+}
+
+.result__container {
+  position: relative;
+
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.result__item {
+  @include lato;
+
+  min-height: 500px;
+  padding-bottom: 28px;
+}
+
+.result__img-before-container,
+.result__img-after-container {
+  position: absolute;
+
+  height: auto;
+  width: auto;
+
+  overflow: hidden;
+}
+
+.result__img-before-container {
+  z-index: 3;
+  top: 120px;
+  left: 200px;
+}
+
+.result__img-after-container {
+  z-index: 2;
+  top: 70px;
+  left: 393px;
+}
+
+.result__img-before-container img,
+.result__img-after-container img {
+  animation: scale-image 5s infinite alternate;
+}
+
+.result__info {
+  float: right;
+
+  min-width: 180px;
+  margin-right: 178px;
+  margin-top: 180px;
+}
+
+.result__weight {
+  margin-bottom: 68px;
+}
+
+.result__before,
+.result__after {
+  position: relative;
+
+  display: inline-block;
+
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+
+  &:before {
+    position: absolute;
+    top: 47px;
+    left: 0;
+
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 50px;
+    color: #18a3dd;
+    text-transform: capitalize;
+  }
+}
+
+.result__before::before {
+  content: "Before";
+}
+
+.result__after::before{
+  content: "After";
+}
+
+.result__before {
+  margin-right: 25px;
+}
+
+.result__kg {
+  display: inline-block;
+
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.result__person {
+  position: relative;
+
+  padding-left: 28px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.result__name {
+  font-weight: 900;
+}
+
+.result__aside-line {
+  position: absolute;
+  top: 55px;
+  left: -45px;
+
+  transform: rotate(90deg);
+}

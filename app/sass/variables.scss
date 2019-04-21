@@ -1,0 +1,23 @@
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@mixin lato {
+  font-family: 'Lato', 'Arial', sans-serif;
+}
+
+@mixin raleway {
+  font-family: 'Raleway', 'Arial', sans-serif;
+}
+
+@mixin link {
+  text-decoration: none;
+  line-height: 20px;
+  color: #000000;
+  @include lato;
+}

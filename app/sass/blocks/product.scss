@@ -1,0 +1,128 @@
+.product {
+  position: relative;
+}
+
+.product__rects {
+  position: absolute;
+  top: 43%;
+  right: 0;
+}
+
+.product__wrapper {
+  position: relative;
+
+  min-width: 860px;
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-bottom: 87px;
+  padding-top: 276px;
+  padding-bottom: 200px;
+}
+
+.product__img-container {
+  position: absolute;
+  z-index: 2;
+  top: 180px;
+  right: -60px;
+
+  width: auto;
+  height: auto;
+}
+
+.product__tagline {
+  position: relative;
+
+  padding-left: 34px;
+  margin-bottom: 56px;
+}
+
+.product__tagline-text {
+  @include raleway;
+}
+
+.product__tagline-text--uppercase {
+  display: inline-block;
+  margin-bottom: 23px;
+
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 72px;
+  word-spacing: -3px;
+  line-height: 55px;
+}
+
+.product__tagline-text--first-letter {
+  font-weight: 800;
+  line-height: 24px;
+  font-size: 24px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.product__aside-line {
+  position: absolute;
+  top: 46px;
+  left: -41px;
+
+  transform: rotate(90deg);
+}
+
+.product__text {
+  @include lato;
+
+  max-width: 450px;
+  margin-bottom: 45px;
+  padding-left: 4px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  word-spacing: 1.5px;
+}
+
+.product__button {
+  @include lato;
+
+  margin-left: 2px;
+  padding-bottom: 4px;
+
+  letter-spacing: 1px;
+}
+
+.product__video {
+  display: inline-block; 
+  margin-left: 25px;
+
+  font-size: 16px;
+  font-weight: 700;
+  word-spacing: 2px;
+  line-height: 16px;
+  text-transform: uppercase;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.product__play-sign {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  box-sizing: content-box;
+
+  color: #18a3dd;
+  line-height: 10px;
+  text-align: center;
+
+  border: 3px solid #18a3dd;
+  border-radius: 50%;
+
+  transition: all 0.5s ease;
+}
+
+.product__video:hover .product__play-sign,
+.product__video:focus .product__play-sign {
+  color: adjust-hue(#18a3dd, 180deg);
+  border-color: adjust-hue(#18a3dd, 180deg);
+}

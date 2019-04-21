@@ -1,0 +1,87 @@
+.features {
+  padding-top: 109px;
+}
+
+.features__list {
+  @include lato;
+
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  min-width: 740px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 128px;
+  padding-bottom: 112px;
+
+  list-style: none;
+
+  background-image: url("../../img/man-and-woman.png");
+  background-repeat: no-repeat;
+  background-position: left 51% top 70px;
+}
+
+.features__item {
+  flex-basis: 50%;
+  
+  &:nth-child(-n+2) {
+    margin-bottom: 65px;
+  }
+
+  &:nth-child(odd) {
+    text-align: right;
+    margin-left: 0;
+  }
+
+  &:nth-child(even) .features__item-warapper {
+    margin-left: auto;
+  }
+
+  &:nth-child(even) .features__name {
+    padding-left: 28px;
+  }
+
+  &:nth-child(odd) .features__name {
+    padding-right: 28px;
+  }
+
+  &:nth-child(odd) .features__line {
+    top: 22px; 
+    right: -16px;
+  }
+
+  &:nth-child(even) .features__line {
+    top: 22px;
+    left: -16px;
+  }
+}
+
+.features__item-warapper {
+  width: 260px;
+}
+
+.features__name {
+  @include raleway;
+  
+  position: relative;
+
+  display: block;
+  margin-bottom: 23px;
+
+  text-transform: uppercase;
+  font-size: 21px;
+}
+
+.features__line {
+  position: absolute;
+
+  transform: rotate(90deg);
+}
+
+.features__text {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 24px;
+}

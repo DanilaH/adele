@@ -1,0 +1,71 @@
+.box {
+  position: relative;
+}
+
+.box__rects {
+  z-index: -1;
+  position: absolute;
+  top: 22%;
+  left: 0;
+
+  transform: rotate(180deg);
+}
+
+.box__wrapper {
+  @include lato;
+  
+  position: relative;
+
+  max-width: 1040px;
+  margin: 0 auto;
+  padding-top: 136px;
+  padding-bottom: 190px;
+}
+
+.box__img {
+  position: absolute;
+  top: 85px;
+  left: -150px;
+  z-index: -1;
+
+  display: block;
+}
+
+.box__container {
+  max-width: 400px;
+  margin-left: auto;
+}
+
+.supplment__header {
+  position: relative;
+  padding-left: 30px;
+
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.box__aside-line {
+  position: absolute;
+  top: 25px;
+  left: -24px;
+
+  transform: rotate(90deg);
+}
+
+.box__cost {
+  display: inline-block;
+  padding-top: 10px;
+
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.box__text {
+  max-width: 350px;
+  margin-bottom: 35px;
+
+  font-size: 16px;
+  line-height: 24px; 
+}

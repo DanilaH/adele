@@ -1,0 +1,55 @@
+.reply {
+  @include lato;
+
+  margin-bottom: 120px;
+}
+
+.reply__header-container {
+  margin-bottom: 60px;
+}
+
+.reply__form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.reply__input {
+  display: block;
+  padding-bottom: 9px;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+
+  border: none;
+  border-bottom: 1px solid #c6cfd2;
+}
+
+.reply__name,
+.reply__email {
+  flex-basis: 46.5%;
+  margin-bottom: 45px;
+}
+
+.reply__email {
+  margin-left: auto;
+}
+
+.reply__subject {
+  flex-basis: 100%;
+}
+
+.reply__textarea {
+  flex-basis: 100%;
+  min-height: 125px;
+  margin-bottom: 50px;
+
+  resize: none;
+}
+
+.reply__button {
+  width: 220px;
+  margin: 0 auto;
+} 

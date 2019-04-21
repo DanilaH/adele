@@ -1,0 +1,39 @@
+.certifications {
+  background-color: #f1f4f5;
+}
+
+.certifications__header-container {
+  margin-bottom: 40px;
+  padding-top: 80px;
+}
+
+.certifications__bold {
+  margin: 0;
+}
+
+.certifications__list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 100px;
+
+  list-style: none;
+}
+
+.certifications__item {
+  height: 120px;
+  width: 20%;
+
+  border-right: 1px solid #ebebeb;
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.certifications__item img {
+  display: block;
+  margin: 0 auto;
+}

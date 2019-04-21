@@ -1,0 +1,43 @@
+.subscribe {
+  @include lato;
+
+  padding-bottom: 123px;
+  margin-bottom: 108px;
+
+  background-image: url('../../img/background-subs.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.subscribe__header-container {
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+
+.subscribe__header {
+  color: #ffffff;
+}
+
+.subscribe__form {
+  display: flex;
+  width: 555px;
+  margin: 0 auto;
+}
+
+.subscrbe__email {
+  display: block;
+  flex-grow: 2;
+  box-sizing: border-box;
+  padding-left: 30px;
+
+  border-radius: 60px 0 0 60px;
+  border-color: transparent;
+}
+
+.subscribe__button {
+  display: block;
+  width: 150px;
+
+  border-radius: 0px 60px 60px 0;
+}

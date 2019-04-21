@@ -1,0 +1,69 @@
+.feedback {
+  position: relative;
+
+  @include lato
+
+  background-image: url('../../img/background-feedback.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: #ffffff;
+}
+
+.feedback__header-container {
+  padding-top: 110px;
+  margin-bottom: 60px;
+}
+
+.feedback__header-text {
+  color: #a9a9a8;
+} 
+
+.feedback__comment {
+  width: 750px;
+  margin: 0 auto;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.feedback__text {
+  margin-bottom: 30px;
+
+  text-align: center;
+  font-weight: 300;
+  font-style: italic;
+  color: #a9a9a9;
+}
+
+.feedback__author {
+  width: 230px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding-left: 70px;
+}
+
+.feedback__avatar {
+  float: left;
+
+  width: 65px;
+  height: 73px;
+  margin-right: 35px;
+}
+
+.feedback__person,
+.feedback__location {
+  margin: 0;
+}
+
+.feedback__person {
+  text-transform: uppercase;
+}
+
+.feedback__location {
+  color: #a9a9a9;
+}
+
+.feedback__toggles {
+  padding-bottom: 120px;
+}
